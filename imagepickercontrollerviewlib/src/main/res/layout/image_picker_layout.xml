@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/folder_button"
+            android:id="@+id/textView1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_light"
+            android:visibility="invisible"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/cancle_button"
+            android:id="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/photo_catalogue_listview"
+            android:background="#E6000000"
+            android:backgroundTint="@android:color/white"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#d2d2d7"
+            android:dividerHeight="0.5dp"></ListView>
+
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/photo_gridview"
+            android:cacheColorHint="@android:color/transparent"
+            android:clipToPadding="false"
+            android:fadingEdge="none"
+            android:horizontalSpacing="2dp"
+            android:numColumns="3"
+            android:verticalSpacing="2dp"
+            android:visibility="invisible">
+
+        </GridView>
+
+        <TextView
+            android:id="@+id/empty_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/waiting"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

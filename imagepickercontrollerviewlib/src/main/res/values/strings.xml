@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ImagePickerControllerViewLib</string>
+
+
+    <string name="folder_button">&lt;相簙</string>
+    <string name="cancle_button">取消</string>
+    <string name="waiting">请稍等</string>
+    <string name="no_photos">没有照片</string>
+</resources>
